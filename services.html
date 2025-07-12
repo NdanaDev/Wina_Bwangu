@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+  <!-- Header Section -->
+  <header class="topbar">
+    <div class="logo">
+        <img src="./w-solid.svg" alt="Website Logo">
+        <span class="logo-text">Wina Bwangu</span>
+    </div>      
+
+
+      <div class="notification">
+        <i class="fas fa-bell"></i>
+        <span class="notification-count">3</span>
+      </div>
+
+      <div class="user-profile">
+          <img src="./user-solid.svg" alt="User Profile" class="profile-pic">
+          <span class="user-name">Ephraim Ndana</span>
+          <div class="dropdowns">
+              <ul class="dropdowns-menu">
+                  <li><a href="/profile">Profile</a></li>
+                  <li><a href="/Login page.html">Logout</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="mode-toggle">
+          <input type="checkbox" id="darkmode-toggle" class="darkmode-input">
+          <label for="darkmode-toggle" class="darkmode-label">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+          </label>
+      </div>
+  </header>
+
+  <div class="contentss">
+    <!-- Sidebar Section -->
+    <aside class="sidebar" id="sidebar">
+        <div class="dashboard-title">
+            <img src="./bars-solid.svg" class="nav-icon">Dashboard
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item dropdown">
+                <a href="/Home_page.html" class="nav-link">
+                    <img src="./house-solid.svg" class="nav-icon"> Home Page
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="Transaction.html" class="nav-link">
+                    <img src="./money-bill-solid.svg" class="nav-icon"> Transactions
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="/Transaction_History.html">View Transaction History</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="services.html" class="nav-link">
+                    <img src="./w-solid.svg" class="nav-icon"> Wina Bwangu Services
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">
+                    <img src="./chart-simple-solid.svg" class="nav-icon"> Reports
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="/reports/summary">Summary Report</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <section class="our-services">
+        <h2>Our Services</h2>
+        <p>Wina Bwangu offers a range of services to meet your financial needs.</p>
+        
+        <div class="services-container">
+            <div class="service-item">
+                <i class="fas fa-money"></i>
+                <h3>Airtel Money</h3>
+                <p>Airtel Money is available at all locations.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-money"></i>
+                <h3>MTN Money</h3>
+                <p>MTN Money is available at most locations except Wina5.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-money"></i>
+                <h3>Zamtel Money</h3>
+                <p>Zamtel Money is limited to specific booths.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-dollar"></i>
+                <h3>Zanaco</h3>
+                <p>Zanaco is available at all locations.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-money"></i>
+                <h3>FNB</h3>
+                <p>FNB is available at all locations.</p>
+            </div>
+        
+        <a href="Transaction.html" class="learn-more-btn">Learn More</a>
+    </section>
+    
+
+  <script src="services.js"></script>
+</body>
+</html>

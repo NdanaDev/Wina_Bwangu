@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction page</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+    <link rel="stylesheet" href="transaction.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+  <div class="background"></div>
+  <div class="content">
+  <!-- Header Section -->
+  <header class="topbar">
+    <div class="logo">
+        <img src="w-solid.svg" alt="Website Logo">
+        <span class="logo-text">Wina Bwnagu</span>
+    </div>
+
+    <div class="notification">
+        <i class="fas fa-bell"></i>
+        <span class="notification-count">3</span>
+      </div>
+
+    <div class="user-profile">
+        <img src="./user-solid.svg" alt="User Profile" class="profile-pic">
+        <span class="user-name">Ephraim Ndana</span>
+        <div class="dropdowns">
+            <ul class="dropdowns-menu">
+                <li><a href="/profile">Profile</a></li>
+                <li><a href="/Login page.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mode-toggle">
+        <input type="checkbox" id="darkmode-toggle" class="darkmode-input">
+        <label for="darkmode-toggle" class="darkmode-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </label>
+    </div>
+</header>
+
+  <div class="contentss">
+    <!-- Sidebar Section -->
+    <aside class="sidebar" id="sidebar">
+        <div class="dashboard-title">
+            <img src="./bars-solid.svg" class="nav-icon">Dashboard
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item dropdown">
+                <a href="./Home_page.html" class="nav-link">
+                    <img src="./house-solid.svg" class="nav-icon"> Home Page
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="./Transaction.html" class="nav-link">
+                    <img src="./money-bill-solid.svg" class="nav-icon"> Transactions
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="./Transaction_History.html">View Transaction History</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="./services.html" class="nav-link">
+                    <img src="./w-solid.svg" class="nav-icon"> Wina Bwangu Services
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">
+                    <img src="./chart-simple-solid.svg" class="nav-icon"> Reports
+                </a>
+            </li>
+        </ul>
+    </aside>
+      </section>
+    <section class="services-section">
+        <h2>Select Service</h2>
+        <div class="services-buttons">
+            <button class="payment-button" data-section="Wina1">
+                <img src="./person-booth-solid.svg" class="button-icon"> Wina1- Lusaka CBD
+            </button>
+            <button class="payment-button" data-section="Wina2">
+                <img src="./person-booth-solid.svg" class="button-icon"> Wina2- Libala
+            </button>
+            <button class="payment-button" data-section="Wina3">
+                <img src="./person-booth-solid.svg" class="button-icon"> Wina3- Kabwata
+            </button>
+            <button class="payment-button" data-section="Wina4">
+                <img src="./person-booth-solid.svg" class="button-icon"> Wina4- Mandevu
+            </button>
+            <button class="payment-button" data-section="Wina5">
+                <img src="./person-booth-solid.svg" class="button-icon"> Wina5- Woodlands
+            </button>
+            <button class="payment-button" data-section="Wina6">
+                <img src="./person-booth-solid.svg" class="button-icon"> Wina6- Matero East
+            </button>
+        </div>
+    
+        <!-- Form Section -->
+        <section id="form-section" class="hidden">
+            <form id="serviceForm">
+                <!-- Heading to be updated with the selected service name -->
+                <h3 id="transactionHeading" class="hidden">Submit a New Transaction</h3>
+    
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" readonly> <!-- Read-only field for location -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </section>
+    
+
+   
+    
+    
+    
+</div>
+  <script src="Transactions.js"></script>
+</body>
+</html>

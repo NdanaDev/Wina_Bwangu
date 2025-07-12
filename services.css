@@ -1,0 +1,500 @@
+body {
+    background:linear-gradient(to right, #07053b, #4722b7);
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background{
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Wina\ Bwangu\ Background.jpeg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #333;
+}
+    
+/* Content Layout */
+.contentss {
+    display: flex;                  /* Flexbox layout to place sidebar and form side by side */
+    height: 100vh;                  /* Ensure the content takes up the full viewport height */
+    align-items: flex-start;
+    gap: 20px;                      /* Add space between the sidebar and the form */
+    padding: 20px;
+}
+
+.contents {
+        display: flex;
+        justify-content: center; /* Horizontally center */
+        align-items: center;     /* Vertically center */
+        min-height: 100vh;       /* Full viewport height */
+        flex-direction: column;  /* Stack items vertically */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;                  /* Extend the sidebar to the full height of the viewport */
+    background-color: #4a67b8;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Smooth sliding */
+}
+
+.dashboard-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover {
+    background-color: #ECECEC;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-icon,
+.nav-icons {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Adds space between the icon and the text */
+}
+
+/* Dropdown Styling */
+.dropdown-content {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #ADBBDA;
+    padding: 10px;
+}
+
+.dropdown-content li {
+    margin-bottom: 5px;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+    color: #cfd8e3;
+    border-radius: 8px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: #ffffff;
+    background-color: #4a5568;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Topbar Styling */
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 40px 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgba(244, 244, 244, 0.8);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
+    background-color: #fff;
+}
+
+.search-bar i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    cursor: pointer;
+}
+
+.topbar-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.language-selector select {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(244, 244, 244, 0.8);
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-selector select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.3);
+    background-color: #fff;
+}
+
+.notification {
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.notification i {
+    font-size: 22px;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.notification:hover i {
+    color: #4A90E2;
+}
+
+.notification-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #ff4757;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdowns {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--topbar-bg);
+    border-radius: 4px;
+    box-shadow: 0 2px 10px var(--shadow-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.user-profile:hover .dropdowns {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdowns-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdowns-menu li {
+    padding: 0;
+}
+
+.dropdowns-menu a {
+    display: block;
+    padding: 10px 15px;
+padding: 0;
+    margin: 0;
+}
+
+.dropdowns-menu li {
+    padding: 0;
+}
+
+.dropdowns-menu a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdowns-menu a:hover {
+    background-color: var(--search-bg);
+}
+.profile-pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4A90E2;
+}
+
+.user-name {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .topbar {
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+
+    .search-bar {
+        order: 3;
+        width: 100%;
+        max-width: none;
+        margin: 15px 0 0;
+    }
+
+    .topbar-right {
+        gap: 15px;
+    }
+
+    .language-selector,
+    .user-name {
+        display: none;
+    }
+}
+
+:root {
+    --bg-color: #f6f9fc;
+    --text-color: #333;
+    --topbar-bg: rgba(255, 255, 255, 0.8);
+    --search-bg: rgba(244, 244, 244, 0.8);
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --highlight-color: #4A90E2;
+}
+
+.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #f0f0f0;
+    --topbar-bg: rgba(30, 30, 30, 0.8);
+    --search-bg: rgba(50, 50, 50, 0.8);
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --highlight-color: #64b5f6;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.topbar {
+    background-color: var(--topbar-bg);
+    box-shadow: 0 1px 5px var(--shadow-color);
+}
+
+.search-input {
+    background-color: var(--search-bg);
+    color: var(--text-color);
+}
+
+/* Mode toggle styles */
+.mode-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.darkmode-input {
+    display: none;
+}
+
+.darkmode-label {
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    background-color: var(--highlight-color);
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.darkmode-label i {
+    font-size: 14px;
+    color: #fff;
+}
+
+.darkmode-label::after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+.darkmode-input:checked + .darkmode-label::after {
+    transform: translateX(25px);
+}
+
+/* Update other elements to use CSS variables */
+.logo i, .notification i {
+    color: var(--highlight-color);
+}
+
+/* ... update other color properties as needed ... */
+
+.our-services {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #F0F4F8, #E0ECF8); /* Light blue background to match the page */
+    color: #333333; /* Darker text for better contrast on light background */
+}
+
+.our-services h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #4A90E2; /* Keeping the highlight color from the original page */
+}
+
+.our-services p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555555; /* Slightly darker for better readability */
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background: #FFFFFF; /* White background for cards */
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item i {
+    font-size: 3em;
+    color: #4A90E2; /* Keeping the highlight color for icons */
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333333; /* Darker color for headings */
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #555555; /* Slightly darker for better readability */
+}
+
+.learn-more-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #4A90E2; /* Keeping the highlight color for buttons */
+    color: #FFFFFF; /* White text for contrast */
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+    background-color: #357ABD; /* Slightly darker shade for hover effect */
+}
+
+.nav-link.active {
+    background-color: #8697C4;
+    color: white;
+    border-radius: 5px;
+}
+
+.nav-link.active img {
+    filter: brightness(0) invert(1); /* Makes the icon white when active */
+}
+
+.nav-link:hover {
+    background-color: rgba(134, 151, 196, 0.1);
+    border-radius: 5px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="topbar">
+    <div class="logo">
+        <img src="w-solid.svg" alt="Website Logo">
+        <span class="logo-text">Wina Bwangu</span>
+    </div>
+
+      <div class="search-bar">
+          <input type="text" placeholder="Search" class="search-input">
+      </div>
+
+      <div class="language-selector">
+          <select name="language" id="language">
+              <option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="es">Español</option>
+          </select>
+      </div>
+
+      <div class="notification">
+        <i class="fas fa-bell"></i>
+        <span class="notification-count">3</span>
+      </div>
+
+      <div class="user-profile">
+          <img src="/user-solid.svg" alt="User Profile" class="profile-pic">
+          <span class="user-name">Ephraim Ndana</span>
+          <div class="dropdowns">
+              <ul class="dropdowns-menu">
+                  <li><a href="/profile">Profile</a></li>
+                  <li><a href="/settings">Settings</a></li>
+                  <li><a href="/logout">Logout</a></li>
+              </ul>
+          </div>
+      </div>
+
+      <div class="mode-toggle">
+          <input type="checkbox" id="darkmode-toggle" class="darkmode-input">
+          <label for="darkmode-toggle" class="darkmode-label">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+          </label>
+      </div>
+  </header>
+
+  <div class="contentss">
+    <!-- Sidebar Section -->
+    <aside class="sidebar" id="sidebar">
+        <div class="dashboard-title">
+            <img src="/bars-solid.svg" class="nav-icon">Dashboard
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item dropdown">
+                <a href="/Home_page.html" class="nav-link">
+                    <img src="/house-solid.svg" class="nav-icon"> Home Page
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="Transaction.html" class="nav-link">
+                    <img src="/money-bill-solid.svg" class="nav-icon"> Transactions
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="/Transaction_Hirtory.html">View Transaction History</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="services.html" class="nav-link">
+                    <img src="/w-solid.svg" class="nav-icon"> Wina Bwangu Services
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="/services/list">All Services</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link">
+                    <img src="/chart-simple-solid.svg" class="nav-icon"> Reports
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="/reports/summary">Summary Report</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+        
+          </div>
+          
+          <div class="Cumuulative Overview">
+            <div class="Overview-item">
+                <h1>Service Cumulative Totals</h1>
+            </div>
+          </div>
+
+<script src="main_homepage.js"></script>        
+</body>
+</html>
